@@ -16,6 +16,19 @@ const contribData = [
         github: '',
         image: Profile
     },
+    {
+        id: 1,
+        name: 'Rajdeep Dangar',
+        github: '',
+        image: Profile
+    },
+    {
+        id: 2,
+        name: 'Prince Dhameliya',
+        github: '',
+        image: Profile
+    },
+    
 ]
 
 function Contributors() {
