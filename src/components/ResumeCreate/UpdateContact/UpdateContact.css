@@ -1,0 +1,118 @@
+.updateContact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    overflow: hidden;
+    /* extra */
+    color: #03263a;
+}
+
+.updateContact > h1 {
+    font-size: 3.2rem;
+    margin-top: 1rem;
+    margin-bottom: -1rem;
+}
+
+.contactFormContainer {
+    margin: 3rem 0;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactFormContainer label{
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: -0.5rem;
+}
+
+/* address label aligning */
+.contactFormFour label{
+    margin-bottom: 0.5rem;
+}
+
+.contactFormOne, .contactFormTwo, .contactFormThree, .contactFormFour {
+    margin-bottom: .2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.input_c {
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 48px;
+    margin: 1rem 0;
+    padding-left: 1rem;
+
+    /* extra */
+    margin-bottom: 1.5rem;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.1rem;
+    color: rgb(35, 68, 179);
+    font-weight: 600;
+    background: rgba(17, 133, 112, 0.3);
+    box-shadow: inset -3px -3px 6px rgba(255, 255, 255, 0.55), inset 3px 3px 6px rgba(0, 0, 0, 0.55);
+    border-radius: 7px;
+}
+.input_add{
+    box-sizing: border-box;
+    border-radius: 8px;
+    outline: none;
+    min-width: 100%;
+    min-height: 5rem;
+    height: 48px;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    color: black;
+    
+    /* extra */
+    border: none;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.1rem;
+    color: rgb(35, 68, 179);
+    font-weight: 600;
+    background: rgba(17, 133, 112, 0.3);
+    box-shadow: inset -3px -3px 6px rgba(255, 255, 255, 0.55), inset 3px 3px 6px rgba(0, 0, 0, 0.55);
+    border-radius: 7px;
+}
+
+.contactForm > button, .contactForm > button:hover {
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    padding: 0.6rem 2.0rem;
+    text-transform: inherit;
+    box-sizing: border-box;
+    
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ddf0ed;
+    background: #1090D9;
+    border-radius: 40px;
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif !important;
+    box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.25), 3px 3px 6px rgba(0, 0, 0, 0.55);
+    
+}
+
+@media (max-width:700px){
+    .updateContact > h1 {
+        font-size: 2.8rem;
+        text-align: center;
+    }
+    .contactFormContainer {
+        width: 90%;
+        /* margin-left: 3%;    */
+    }
+    .input_add{
+        min-height: 7rem;
+    }
+}
+@media (max-width:500px){
+    .updateContact > h1 {
+        font-size: 2.3rem;
+    }
+}

@@ -1,0 +1,218 @@
+.updateHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    overflow: hidden;
+    /* extra */
+    color: #03263a;
+}
+
+/* extra */
+.updateHeader > h1 {
+    font-size: 3.2rem;
+    margin-top: 1rem;
+    margin-bottom: -1.8rem;
+}
+
+.headerFormContainer {
+    margin: 1rem;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.headerFormContainer > form {
+    width: 100%;
+}
+
+/* extra */
+.headerFormContainer label{
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: -0.5rem;
+}
+
+
+.headerFormOne {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+
+.headerFormOneLeft {
+    margin: 2rem;
+}
+
+.image-upload {
+    height: 170px;
+    width: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 100%;
+}
+
+.image-upload > input {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+
+.image-upload > input[type="file"] {
+    display: none;
+}
+
+.customFileUpload {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+.headerFormOneRight {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+    margin-left: 3rem;
+}
+
+
+.input_name, .input_title {
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 48px;
+    margin: 1rem 0;
+    padding-left: 1rem;
+
+    /* extra */
+    margin-bottom: 1.5rem;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.1rem;
+    color: rgb(35, 68, 179);
+    font-weight: 600;
+    background: rgba(17, 133, 112, 0.3);
+    box-shadow: inset -3px -3px 6px rgba(255, 255, 255, 0.55), inset 3px 3px 6px rgba(0, 0, 0, 0.55);
+    border-radius: 7px;
+}
+
+/* extra */
+::placeholder{
+    font-weight: 400;
+    color: #C2F0E8da;
+}
+
+
+
+.headerFormTwo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.headerFormTwo > label{
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+}
+
+.input_bio {
+    box-sizing: border-box;
+    border-radius: 8px;
+    outline: none;
+    min-width: 100%;
+    min-height: 6rem;
+    height: 48px;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    color: black;
+    
+    /* extra */
+    border: none;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.1rem;
+    color: rgb(35, 68, 179);
+    font-weight: 600;
+    background: rgba(17, 133, 112, 0.3);
+    box-shadow: inset -3px -3px 6px rgba(255, 255, 255, 0.55), inset 3px 3px 6px rgba(0, 0, 0, 0.55);
+    border-radius: 7px;
+}
+
+.headerForm > button, .headerForm > button:hover {
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    padding: 0.6rem 2.0rem;
+    text-transform: inherit;
+    box-sizing: border-box;
+    
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ddf0ed;
+    background: #1090D9;
+    border-radius: 40px;
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif !important;
+    box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.25), 3px 3px 6px rgba(0, 0, 0, 0.55);
+    
+}
+
+
+@media (max-width:800px){
+    .updateHeader > h1 {
+        font-size: 3rem;
+    }
+
+    .headerFormOneLeft {
+        margin: 0.7rem;
+    }
+
+    .headerFormOne {
+        flex-direction: column;
+
+    }
+    .headerFormOneRight {
+        margin-left: initial;
+    }
+}
+
+@media (max-width:600px){
+    .updateHeader > h1 {
+        font-size: 2.8rem;
+    }
+    .headerFormContainer{
+        width: 100%;
+
+    }
+    .headerFormOneRight {
+        margin-left: 10%;
+    }
+
+    .input_name, .input_title {
+        width: 90%;
+    }
+    .headerFormTwo {
+        margin-left: 5%;
+    }
+    .input_bio {
+        min-width: initial;
+        width:  90% ;
+        min-height: 7rem;
+        margin-top: -3%;
+    }
+}
+
+@media (max-width:500px){
+    .updateHeader > h1 {
+        font-size: 2.5rem;
+    }
+}

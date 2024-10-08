@@ -1,0 +1,521 @@
+.resumeCreate {
+    height: 100vh;
+    background-image: url(../../assets/images/svg/bg.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 120%;
+    background-position: center;
+    overflow: hidden;
+}
+
+.resumeCreate_Container {
+    padding: 1rem 6rem;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.resumeCreate_header {
+    color: rgba(255, 255, 255, 0.8);
+    font-family: Nunito;
+    font-size: 1.1rem;
+    align-self: flex-start;
+    margin-left: -5%;
+}
+
+/* HrtStepper Desktop starts here */
+
+.HrtStepper{
+    width: 600px;
+    height: 80px;
+    /*   background: red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: .5rem;
+
+    transform: scale(0.8);
+
+    margin-bottom: -3.5rem;
+  }
+  
+  .HrtStepperItem{
+    background: #ECECEC;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    transition: 0.2s ease 0.5s;
+    z-index: 2;
+  }
+  
+  .HrtStepperItem i{
+    transform: scale(1.8);
+    color: #063A57;
+  }
+  
+  .HrtStepperBar{
+    position: absolute;
+    width: 500px;
+    height: 10px;
+    background: white;
+    border-radius: 5px;
+    z-index: 0;
+  }
+  
+  .HrtStepperBarProgress{
+    width: 0%;
+    height: 100%;
+    background: #1090D9;
+    border-radius: 5px;
+    transition: 1s ease;
+  }
+
+  /* HrtStepper Desktop ends here */
+
+  
+.resumeCreate_Body {
+    margin: 2rem;
+    /* pushing it down */
+    transform: translate(0, 5%);
+
+    /* glass texture */
+    background: linear-gradient(305.17deg, rgba(94, 94, 94, 0.128) 2.36%, rgba(255, 254, 254, 0.328) 97.48%);
+    -webkit-backdrop-filter: blur(4px);
+    -moz-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    border: 2px solid #108fd934;
+
+    font-family: 'Barlow', sans-serif;
+    border-radius: 15px;
+    width: 70%;
+
+}
+
+.MuiTooltip-tooltip{
+    background-color: #1090D9 !important;
+    color: #063A57 !important;
+    font-size: 0.8rem !important;
+    font-weight: 700 !important;
+}
+
+.slick-slider {
+    height: 100% !important;
+}
+
+
+.slick-initialized { 
+    overflow: hidden; 
+}
+
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 75vh !important;
+    overflow-y: scroll !important;
+}
+
+
+.resumeSlider_Buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.resumeSlider_Buttons > button, .resumeSlider_Buttons > button:hover {
+    font-size: 18px;
+    text-transform: inherit;
+    color: #1090D9;
+    /* border: 1px solid blueviolet; */
+    box-sizing: border-box;
+    margin-top: -3.5rem;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 65px;
+    height: 65px;
+    /* background: #58B7EC; */
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.3), 5px 5px 10px rgba(0, 0, 0, 0.7);
+    border-radius: 80px;
+}
+
+.nextButton{
+    stroke: #1090D9;
+    transform: scale(2);
+    stroke-width: 2px;
+}
+.prevButton{
+    stroke: #ddf0ed;
+    transform: scale(2);
+    stroke-width: 2px;
+}
+
+.resumeSlider_Buttons > .generate_btn, .resumeSlider_Buttons > .generate_btn:hover {
+    font-size: 1.4rem;
+    font-weight: bold;
+    width: 170px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+
+.generate_pdf {
+    font-size: 1.4rem;
+    padding-left: 0.5rem;
+    margin-bottom: -0.2rem;
+    transform: scale(1.5);
+}
+
+
+.generate_popup {
+    background-color: #1090D9 !important;
+    min-height: 300px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid #063A57;
+}
+
+.popupDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.popupDiv h3{
+    font-family: 'Nunito', sans-serif !important;
+	font-size: 2rem;
+	margin-top: -5%;
+	margin-bottom: 5%;
+	text-align: center;
+}
+.popupDiv p{
+    font-family: 'Nunito', sans-serif !important;
+	font-size: 1.1rem;
+	font-weight: 600;
+	width: 80%;
+	text-align: center;
+
+}
+
+.popupDiv button{
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    padding: 0.6rem 2.0rem;
+    text-transform: inherit;
+    box-sizing: border-box;
+    
+    color: #ddf0ed;
+    background: #1090D9;
+    border-radius: 40px;
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif !important;
+    box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.25), 3px 3px 6px rgba(0, 0, 0, 0.55);
+    
+}
+
+.MuiDialogContentText-root {
+    margin-bottom: 12px;
+    color: #063A57 !important;
+}
+
+@media (min-width: 1380px) and (max-width: 1500px) {
+    .resumeCreate{
+        background-size: cover;
+        background-position: center;
+    }
+    .generate_btn{
+        margin-left: 10%;
+    
+    }
+
+}
+@media (min-width: 992px) and (max-width: 1380px) {
+    .resumeCreate{
+        background-size: cover;
+        background-position: center;
+    }
+    .resumeCreate_Container {
+        padding: 2rem 3rem;
+    }
+    .resumeCreate_header {
+        margin-top: -1%;
+        margin-left: -1%;
+        font-size: 1rem;
+    }
+    .HrtStepper{
+        transform: scale(0.75);
+      }
+}
+
+
+@media screen and (max-width: 992px) {
+    .resumeCreate {
+        background-size: cover;
+        background-position: 30% 5%;
+    }
+    
+    .resumeCreate_Container {
+        padding: 2rem 0rem;
+    }
+
+    .resumeCreate_header {
+        margin-top: -1.2%;
+        color: rgba(255, 255, 255);
+        margin-left: 3%;
+        font-size: 0.98rem;
+    }
+
+    .resumeCreate_Body {
+        margin: 2rem;
+        /* pushing it down */
+        transform: translate(0, 5%);
+
+        /* glass texture */
+        background: linear-gradient(305.17deg, rgba(94, 94, 94, 0.128) 2.36%, rgba(255, 254, 254, 0.328) 97.48%);
+        -webkit-backdrop-filter: blur(4px);
+        -moz-backdrop-filter: blur(4px);
+        backdrop-filter: blur(4px);
+        border: 2px solid #108fd934;
+
+        font-family: 'Barlow', sans-serif;
+        border-radius: 15px;
+        width: 70%;
+    }
+
+    .resumeSlider_Buttons {
+        width: 90%;
+    }
+    .slick-slider {
+        height: 490px !important;
+    }
+    .generate_btn{
+        width: 65px !important;
+    }
+    .generateText{
+        display: none;
+    }
+    .generate_pdf {
+        padding-left: 0rem;
+        margin-bottom: 0rem;
+        transform: scale(1.5);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .resumeCreate{
+        overflow: hidden;
+        width: 100vw;
+        height: 100vh;
+        /* background-size: cover; */
+        background-position: 40% 0%;
+    }
+    .resumeCreate_Container {
+        padding: 2rem 0rem;
+    }
+    .HrtStepper{
+        margin-bottom: -12%;
+    }
+    .resumeCreate_header{
+        align-self: center;
+        text-align: center;
+        color: rgba(255, 255, 255);
+        font-size: 1.1rem;
+        margin-bottom: -1%;
+    }
+    .resumeCreate_Body {
+        margin: 1rem;
+        /* pushing it down */
+        transform: translate(0, 5%);
+
+        /* glass texture */
+        background: linear-gradient(305.17deg, rgba(94, 94, 94, 0.128) 2.36%, rgba(255, 254, 254, 0.328) 97.48%);
+        -webkit-backdrop-filter: blur(4px);
+        -moz-backdrop-filter: blur(4px);
+        backdrop-filter: blur(4px);
+        border: 2px solid #108fd934;
+
+        font-family: 'Barlow', sans-serif;
+        border-radius: 15px;
+        margin-top: 10%;
+        width: 70%;
+    }
+    .slick-slider {
+        height: 480px !important;
+    }
+    .resumeSlider_Buttons {
+        margin-top: 1rem;
+        width: 95%;
+    }
+    .resumeSlider_Buttons > button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    
+}
+
+/* HrtStepper Mobile starts here */
+    
+@media (max-width: 700px){
+    .resumeCreate_header{
+        margin-bottom: -3%;
+    }
+    .HrtStepper{
+        width: 350px;
+        height: 30px;
+        margin-top: 8% !important;
+    }
+    .HrtStepperItem{
+        height: 25px;
+        width: 25px;
+    }
+    .HrtStepperItem i{
+        display: none;
+    }
+    .HrtStepperBar{
+        width: 85%;
+        height: 6px;
+        background: white;
+        border-radius: 5px;
+      }
+  }
+
+    /* HrtStepper Mobile ends here */
+
+
+@media screen and (max-width: 600px) {
+
+    .resumeCreate{
+        background-image: url(../../assets/images/svg/bg.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 45% 0%;
+    }
+
+    .HrtStepper{
+        /* width: 200px; */
+        margin-top: 5% !important;
+    }
+
+    .resumeCreate_header{
+        margin-bottom: 0;
+    }
+
+    .resumeCreate_Body {
+        /* pushing it down */
+        margin-top: 10%;
+        border-radius: 15px;
+        width: 80%;
+    }
+    .slick-slider {
+        height: 450px !important;
+    }
+    .resumeSlider_Buttons {
+        margin-top: 4.5rem;
+    }
+}
+
+@media screen and (max-width: 525px) {
+    .resumeCreate{
+        background-image: url(../../assets/images/svg/bg_small.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-color: #58B7EC;
+        overflow: hidden;
+    }
+    .resumeCreate_header h1{
+        text-shadow: 2px 2px 4px #000000de, -2px -2px 4px #ffffff59;
+    }
+    .HrtStepper{
+        margin-top: 2% !important;
+        width: 300px;
+        
+    }
+    .HrtStepperItem{
+        height: 21px;
+        width: 21px;
+    }
+    .resumeSlider_Buttons {
+        margin-top: 5rem;
+    }
+    .slick-slider {
+        height: 400px !important;
+    }
+    .resumeSlider_Buttons button{
+        transform: scale(0.95);
+    }
+	.popupDiv button{
+		transform: scale(0.9);
+	}
+}
+@media screen and (max-width: 400px) {
+    .resumeCreate_Body {
+        /* pushing it down */
+        margin-top: 10%;
+        border-radius: 15px;
+        width: 80%;
+    }
+    .HrtStepper{
+        transform: scale(0.7);
+    }
+    .slick-slider {
+        height: 390px !important;
+    }
+    .resumeSlider_Buttons {
+        margin-top: 5rem;
+    }
+    .resumeSlider_Buttons button{
+        transform: scale(0.9);
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .resumeSlider_Buttons {
+        margin-top: 4.5rem;
+    }
+}
+  
+@media only screen and (max-device-width: 330px){
+    .resumeCreate{
+        overflow-y: scroll;
+    }
+    .resumeCreate_header {
+        font-size: 0.9rem;
+        align-self: flex-start;
+        margin-top: -5%;
+    }
+    .HrtStepper{
+        transform: scale(0.5);
+        margin-top: 4% !important;
+        margin-bottom: -15%;
+    }
+    .slick-slider {
+        height: 380px !important;
+    }
+    .resumeSlider_Buttons {
+        margin-top: 4.5rem;
+    }
+    .resumeSlider_Buttons button{
+        transform: scale(0.8);
+    }
+}
+
+
+@media only screen and (device-width: 768px) {
+
+}
