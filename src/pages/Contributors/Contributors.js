@@ -11,18 +11,6 @@ import Profile from '../../assets/images/png/Profile.png'
 
 const contribData = [
     {
-        id: 1,
-        name: 'Rajdeep Dangar',
-        github: '',
-        image: Profile
-    },
-    {
-        id: 2,
-        name: 'Prince Dhameliya',
-        github: '',
-        image: Profile
-    },
-    {
         id: 3,
         name: 'Dipak Damor',
         github: '',
