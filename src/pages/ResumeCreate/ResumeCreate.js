@@ -222,7 +222,7 @@ function ResumeCreate() {
                 open={openMobileModal}
                 onClose={handleCloseMobile}
                 title="Mobile Download Instructions"
-                message="To download the PDF, please click on the download link provided."
+                message="Mobile Users should press on the Open button and select the Download link option to download the PDF."
                 buttonText="Okay"
                 onButtonClick={handleCloseMobile}
             />
