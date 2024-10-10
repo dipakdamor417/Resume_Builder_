@@ -16,7 +16,7 @@ function Footer() {
                     <GroupIcon className="contributors_icon"/>
                 </Link>
             </div>
-            <p>Copyright © {year} | Resume Builder</p>
+            <p>Copyright © 2022-{year} | Resume Builder</p>
         </div>
     )
 }
